@@ -32,7 +32,7 @@ Currently only handles `InvoiceGenerated` event. It simply downloads the invoice
 - inside this repo, run `docker build -t poc_amqp .`
 - go to `<path-to-app-docker>` & create an empty file called `docker-compose.override.yml`
 - add the following inside the file:
-    ```
+```
 version: '3.5'
 services:
   eventconsumer:
@@ -53,7 +53,7 @@ services:
           API_TOKEN_URL: "http://auth.somehost.org:8080/realms/Artcoded/protocol/openid-connect/token"
           FILE_DOWNLOAD_DIR: "/data"
 
-    ``` 
+``` 
 
 - run `docker-compose up -d`
 - Generate a new invoice from the app
