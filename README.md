@@ -19,7 +19,8 @@ Currently only handles `InvoiceGenerated` event. It simply downloads the invoice
 - clone this repo
 
 ## Run locally
-- inside this repo, run `node index.mjs`
+- inside this repo, run `npm i`
+- run `node index.mjs`
 - Generate a new invoice from the app
 - You should see in the logs:
     ```
